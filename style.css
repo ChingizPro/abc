@@ -10,6 +10,29 @@ img {
     height: auto;
     vertical-align: middle;
 }
+.wrapper {
+    border: 12px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagebox {
+    text-align: center;
+    border: 10px solid blue;
+    position: relative;
+}
+.image {
+    width: 400px;
+}
+.sale {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: gold;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
 .container {
     max-width: 1600px;
     margin: 0 auto;
@@ -64,5 +87,13 @@ img {
     }
     .boxes {
         row-gap: 0;
+    }
+}
+@media(max-width:300px){
+    .sale {
+        position: static;
+    }
+    .imagebox {
+        text-align: right;
     }
 }
